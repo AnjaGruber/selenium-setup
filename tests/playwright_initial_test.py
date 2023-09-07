@@ -90,13 +90,3 @@ def test_login_and_navigate_to_credit_calculator(page):
 
     # Check if the button is present
     assert is_button_present, f"The button '{button_text}' is not present on the page."
-
-    # Click on the "Cash Loan" element
-    # cash_loan_element = page.query_selector("a[href*='/LoansGroup']")  # Selector for the "Cash Loan" link
-    # assert cash_loan_element, "Cash Loan element not found"
-    # cash_loan_element.click()
-
-    # Click on the specific Cash Loan product
-    # specific_cash_loan_element = page.query_selector("a[href*='/CashLoan?productKind=term-loan']")  # Selector for the specific Cash Loan product
-    # assert specific_cash_loan_element, "Specific Cash Loan element not found"
-    # specific_cash_loan_element.click()
