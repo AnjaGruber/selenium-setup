@@ -79,10 +79,6 @@ def test_login_and_navigate_to_credit_calculator(page):
     # Wait for 5 seconds (adjust the duration as needed)
     page.wait_for_timeout(5000)
 
-    # Locate and click the element with the text "Krediti"
-    # krediti_element = page.get_by_role("link", name="Keš kredit sa fiksnom kamatnom stopom", exact=True)
-    # krediti_element.click()
-
     # Locate the button with the text "Prijavi se za ovaj proizvod"
     button_text = "Prijavi se za ovaj proizvod"
     button_selector = f"button:has-text('{button_text}')"
