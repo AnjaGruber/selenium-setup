@@ -36,6 +36,10 @@ def page(browser):
     page.close()
 
 def test_login_and_navigate_to_credit_calculator(page):
+    '''
+    Test case from excel - testing how playwright works
+    '''
+
     # Open the application
     page.goto("https://online.mobibanka.rs/DEMO/")  # Replace with your application's URL
 
