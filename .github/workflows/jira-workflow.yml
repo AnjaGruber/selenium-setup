@@ -30,3 +30,4 @@ jobs:
         issue-type-label-description: 'Jira Issue Type'
         add-jira-key-to-title: true
         add-jira-key-to-body: true
+        extract-issue-key-from: branch
