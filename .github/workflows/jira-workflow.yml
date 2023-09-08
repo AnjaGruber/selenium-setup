@@ -1,0 +1,32 @@
+name: Automation
+
+on:
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+      - reopened
+      - synchronize
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Add Jira info
+      uses: contractify/add-jira-info@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        jira-base-url: ${{ secrets.JIRA_BASE_URL }}
+        jira-username: ${{ secrets.JIRA_USERNAME }}
+        jira-token: ${{ secrets.JIRA_TOKEN }}
+        jira-project-key: DAMAS
+        add-label-with-issue-type: true
+        issue-type-label-color: FBCA04
+        issue-type-label-description: 'Jira Issue Type'
+        add-jira-key-to-title: true
+        add-jira-key-to-body: true
