@@ -23,7 +23,7 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         jira-base-url: ${{ secrets.JIRA_BASE_URL }}
         jira-username: ${{ secrets.JIRA_USERNAME }}
-        jira-token: ${{ secrets.JIRA_TOKEN }}
+        jira-token: ${{ secrets.JIRA_API_TOKEN }}
         jira-project-key: DAMAS
         add-label-with-issue-type: true
         issue-type-label-color: FBCA04
